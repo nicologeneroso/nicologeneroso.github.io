@@ -5,6 +5,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - google1fd5aa348bb4c26d.html
 
 website:
   title: "Nicolò Generoso"
