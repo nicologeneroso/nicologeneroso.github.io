@@ -1,0 +1,43 @@
+# ═══════════════════════════════════════════════════════════════════════════
+#  SITE CONFIG
+# ═══════════════════════════════════════════════════════════════════════════
+
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Nicolò Generoso"
+  favicon: pictures/favicon.svg
+  search: false
+
+  # ---- Top menu ----
+  navbar:
+    title: false
+    left:
+      - href: index.qmd#research
+        text: Research
+      - href: cv.qmd
+        text: CV
+      - href: index.qmd#contact
+        text: Contact
+
+format:
+  html:
+    # ---- Theme (colors + layout) ----
+    theme:
+      light: [cosmo, styles/theme-light.scss, styles/brand.scss]
+      dark:  [cosmo, styles/theme-dark.scss, styles/brand.scss]
+
+    # ---- Font loader ----
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
+
+    toc: false
+    link-external-newwindow: true
+
+    # Disable Quarto's hover chain-link icon on headings 
+    anchor-sections: false

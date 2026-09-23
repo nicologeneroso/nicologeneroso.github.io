@@ -1,0 +1,6 @@
+## Teaching
+
+::: {.teaching-list}
+- Microeconomic Theory (ECON 125) [Teaching Fellow · Fall 23, Fall 24]{.course-meta}
+- Economics of Uncertainty and Information (ECON 411) [Teaching Fellow · Spring 24, Spring 25]{.course-meta}
+:::

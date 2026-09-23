@@ -1,0 +1,355 @@
+/*-- scss:defaults --*/
+
+// Font (body, headings, navbar). Also update the Google Fonts link in _quarto.yml.
+$font-family-base:     'Newsreader', Georgia, 'Times New Roman', serif;
+$headings-font-family: 'Newsreader', Georgia, serif;
+
+
+/*-- scss:rules --*/
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  WHOLE-PAGE BASICS
+// ═══════════════════════════════════════════════════════════════════════════
+html { scroll-behavior: smooth; }
+
+// Master font-size dial 
+:root {
+  --bs-root-font-size: 18.5px;
+  font-size: 18.5px;
+}
+
+// Body text size (also for the research column)
+body { font-size: 1.12rem; }
+
+// Span the full width 
+main.content.column-page { grid-column: screen-start / screen-end; }
+
+// Content column width
+main.content { max-width: 1000px; width: 85%; justify-self: center; }
+
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  PAGE LAYOUT + BIO
+// ═══════════════════════════════════════════════════════════════════════════
+
+h1 { font-size: clamp(1.5rem, 3.5vw, 1.7rem); margin-bottom: 0.3rem; }
+.quarto-title .subtitle { color: var(--muted); font-size: 1.15rem; }
+
+// Name/intro/links from .bio (index.qmd); hide Quarto's title block
+#title-block-header { display: none; }
+
+.home { padding-top: 2.5rem; }
+
+// Portrait: intro text left, photo right, vertically centered
+.bio {
+  max-width: 760px;
+  margin-bottom: 1.3rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.bio-text { flex: 1 1 auto; min-width: 0; }
+.bio-text > h1 { margin-top: 0; margin-bottom: 1rem; }
+.bio-photo {
+  flex: 0 0 auto;
+  width: auto;
+  height: 220px;
+  align-self: flex-start;
+  margin-top: 3rem;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: 54% center;
+  border-radius: 14px;
+}
+.bio > p { display: contents; }
+
+// ── Two-column desktop switch — disabled ───────────────────────────────────
+/*
+@media (min-width: 1000px) {
+  main.content { max-width: 1280px; }
+  .home {
+    display: grid;
+    grid-template-columns: minmax(340px, 430px) 1fr;
+    column-gap: 3.25rem;
+    align-items: start;
+  }
+  .bio {
+    display: block;
+    position: sticky; top: 3.9rem; margin-bottom: 0;
+  }
+  .bio-photo {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 1.5rem 0 0;
+  }
+  .research-area > :first-child,
+  .research-area > :first-child > :is(h1, h2, h3, h4) { margin-top: 0; }
+  .research-area { padding-top: 1rem; }
+  .research-area { padding-bottom: 25vh; }
+}
+*/
+
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  HEADING BOLDNESS
+// ═══════════════════════════════════════════════════════════════════════════
+
+// Paper titles
+// line-height matches .paper-meta/.paper-links below so every row's leading
+// is identical — otherwise headings' 1.2 vs paragraphs' 1.5 line-height makes
+// equal margins look like unequal gaps.
+h4 { font-size: 1em; font-weight: 400; line-height: 1.5; margin: 0 0 0.15rem; }
+h4 strong { font-weight: inherit; }
+
+// Section headers
+h2 { font-size: 1.3rem; font-weight: 600; }
+
+// Sub-headings
+h3 { font-weight: 600; }
+
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  LINKS
+// ═══════════════════════════════════════════════════════════════════════════
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+// Keep headings from hiding under the navbar when a nav link jumps to it
+:is(h1, h2, h3)[id], section[id] { scroll-margin-top: 5rem; }
+
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  NAVBAR
+//  Menu items in _quarto.yml
+// ═══════════════════════════════════════════════════════════════════════════
+
+// Hide navbar 
+.navbar { display: none !important; }
+.navbar {
+  background: var(--page-bg) !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.navbar > .container-fluid,
+.navbar > .container { justify-content: center; }
+#navbarCollapse { flex-grow: 0; justify-content: center; column-gap: 1.25rem; }
+.navbar-nav {
+  margin: 0 !important;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1.25rem;
+}
+
+.navbar .nav-link { color: var(--accent) !important; font-weight: 500; }
+.navbar .nav-link:hover { text-decoration: underline; }
+
+// Dark-mode toggle
+.quarto-color-scheme-toggle {
+  color: var(--page-fg) !important;
+  opacity: 0.85;
+  display: inline-flex;
+  align-items: center;
+  min-width: 1.5em;
+  justify-content: flex-start;
+}
+.quarto-color-scheme-toggle .bi { display: none; }
+
+.quarto-color-scheme-toggle::before { content: "☾"; }
+body.quarto-dark .quarto-color-scheme-toggle::before { content: "☀"; }
+
+.quarto-color-scheme-toggle::after { content: none; }
+.quarto-color-scheme-toggle:hover  { text-decoration: none; }
+
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  RESEARCH ROWS  
+//  Paper text/links live in content/_research.qmd
+// ═══════════════════════════════════════════════════════════════════════════
+.paper { margin: 0 0 1.3rem; }
+p:has(+ .paper) { margin-bottom: 0.3rem; }
+
+// Coauthor / publication lines under a title
+// wrapped in one ::: {.paper-meta} … ::: block. 
+// Every row (coauthor line, venue line) carries the SAME margin-bottom 
+// and line-height as the title and links row.
+.paper-meta {
+  color: var(--muted);
+  margin: 0;
+}
+.paper-meta p { margin: 0 0 0.15rem; line-height: 1.5; }
+.paper-meta .venue { font-style: italic; }
+
+// Inline abstract and paper links on the coauthor row
+.paper-inline-links { display: inline; }
+.paper-inline-links::before,
+.paper-inline-links a::before {
+  content: "·";
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: var(--muted);
+  text-decoration: none;
+  pointer-events: none;
+}
+.paper-inline-links .abstract-toggle {
+  display: inline;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: var(--accent);
+  font: inherit;
+}
+.paper-inline-links .abstract-toggle:hover { text-decoration: underline; }
+
+// Horizontal links row
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  row-gap: 0.2rem;
+  line-height: 1.5;
+}
+.paper-links details.abs { display: contents; }
+.paper-links details.abs > summary {
+  cursor: pointer;
+  color: var(--accent);
+  list-style: none;
+}
+.paper-links details.abs > summary::-webkit-details-marker { display: none; }
+.paper-links details.abs > summary::marker { content: ""; }
+.paper-links details.abs > summary:hover { text-decoration: underline; }
+
+// Separators between links 
+:is(.paper-links, .linkrow) a:not(:first-child):not(.quarto-color-scheme-toggle)::before {
+  content: "·";
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: var(--muted);
+  text-decoration: none;
+  pointer-events: none;
+}
+// The toggle is moved into this row by the script in index.qmd
+.linkrow .quarto-color-scheme-toggle {
+  position: static !important;
+  margin-left: 0;
+}
+.linkrow-sep { display: inline-block; margin: 0 0.5rem; color: var(--muted); }
+.linkrow .bi { vertical-align: -0.1em; }
+.paper-links a { color: var(--accent); }
+
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  EMAIL FIELD
+// ═══════════════════════════════════════════════════════════════════════════
+.email-line { line-height: 1.75; margin: 0.75rem 0 0.9rem; }
+
+.linkrow .email-copy { margin: 0 0.15rem 0 0; }
+
+// Clickable address box
+.email-copy {
+  display: inline-flex;
+  align-items: baseline;
+  vertical-align: baseline;
+  gap: 0.3rem;
+  white-space: nowrap;
+  padding: 0.1rem 0.3rem 0.14rem 0.42rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+.email-copy:hover,
+.email-copy.is-copied { border-color: var(--accent); }
+
+// Address 
+p code.email-copy-addr {
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  font-size: clamp(0.58rem, 2.6vw, 0.78rem);
+  color: var(--accent);
+  background: none;
+  padding: 0;
+  white-space: nowrap;
+  user-select: all;
+}
+
+// Copy button icon
+.email-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.email-copy:hover .email-copy-btn,
+.email-copy.is-copied .email-copy-btn { color: var(--accent); }
+
+// Abstract text revealed by click
+.abs-body {
+  display: none;
+  margin: 0.55rem 0 0;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--bs-border-color);
+  color: var(--muted);
+  max-width: 680px;
+  font-size: 0.88em;
+  line-height: 1.55;
+}
+.paper-meta:has(.abstract-toggle.is-open) + .paper .abs-body { display: block; }
+
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  TEACHING  
+// Courses live in content/_teaching.qmd.
+// ═══════════════════════════════════════════════════════════════════════════
+
+.teaching-list ul { list-style: none; padding-left: 0; margin: 0; }
+
+.teaching-list li {
+  font-size: 0.96em;
+  line-height: 1.5;
+  margin-bottom: 0.7rem;
+}
+.teaching-list li:last-child { margin-bottom: 0; }
+
+// Grey details line 
+.course-meta {
+  display: block;
+  color: var(--muted);
+}
+
+// Make the "Teaching" header quieter than the others.
+// .research-area section:has(> .teaching-list) > h2 { font-size: 1.35rem; }
+
+
+// ═══════════════════════════════════════════════════════════════════════════
+//  MOBILE
+// ═══════════════════════════════════════════════════════════════════════════
+@media (max-width: 600px) {
+  main.content { padding-left: 1rem; padding-right: 1rem; }
+  .bio { gap: 1.1rem; }
+  .bio-photo {
+    width: min(140px, 27vw);
+    height: auto;
+    align-self: center;
+    margin-top: 0;
+  }
+}
+
+// Drop photodrops below the intro instead of squeezing beside it
+@media (max-width: 360px) {
+  .bio { display: block; }
+  .bio-photo {
+    display: block;
+    width: min(140px, 40vw);
+    height: auto;
+    margin: 1.1rem 0 0;
+  }
+}

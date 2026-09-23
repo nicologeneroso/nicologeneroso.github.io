@@ -1,0 +1,107 @@
+## Working papers
+
+#### Universal healthcare with market options
+
+```{=html}
+<div class="paper-meta">
+  with Miho Hong
+  <span class="paper-inline-links">
+    <button class="abstract-toggle" type="button">abstract</button>
+    <!-- <a href="#">paper</a> -->
+  </span>
+</div>
+```
+
+```{=html}
+<div class="paper">
+  <div class="abs-body">
+    Coming soon.
+  </div>
+</div>
+```
+
+#### Who gains from thickness? Access and market power in agricultural markets
+
+```{=html}
+<div class="paper-meta">
+  with Miho Hong
+  <span class="paper-inline-links">
+    <button class="abstract-toggle" type="button">abstract</button>
+    <!-- <a href="#">paper</a> -->
+  </span>
+</div>
+```
+
+```{=html}
+<div class="paper">
+  <div class="abs-body">
+    Coming soon.
+  </div>
+</div>
+```
+
+#### Matching, competition, and auction design for differentiated goods
+
+```{=html}
+<div class="paper-meta">
+  with Miho Hong
+  <span class="paper-inline-links">
+    <button class="abstract-toggle" type="button">abstract</button>
+    <!-- <a href="#">paper</a> -->
+  </span>
+</div>
+```
+
+```{=html}
+<div class="paper">
+  <div class="abs-body">
+    Coming soon.
+  </div>
+</div>
+```
+
+#### Games with noisy signals about emotions
+
+```{=html}
+<div class="paper-meta">
+  with Pierpaolo Battigalli
+  <span class="paper-inline-links">
+    <button class="abstract-toggle" type="button">abstract</button>
+    <a href="https://igier.unibocconi.eu/sites/default/files/media/publication/719_1.pdf?_gl=1*1jtf5vg*_up*MQ..*_ga*NTMwMTM5NjE3LjE3OTAwMjg2MzU.*_ga_BV13NTT085*czE3OTAwMjg2MzQkbzEkZzEkdDE3OTAwMjg2NTMkajQxJGwwJGgw">paper</a>
+  </span>
+  <br>
+  <span class="venue"><em>R&amp;R, Journal of Behavioral and Experimental Economics</em></span>
+</div>
+```
+
+```{=html}
+<div class="paper">
+  <div class="abs-body">
+    We formalize a novel framework allowing for the observation of noisy signals about co-players' emotions, or states of mind. Insofar as the latter are belief-dependent, such feedback allows players to draw inferences informing their strategic thinking. First, we give a definition of players' rationality: we require that rational players hold coherent beliefs, that they update their beliefs consistently with the evidence and according to Bayes rule, that they plan optimally, and that they implement their plans. Under mild and reasonable technical assumptions, we prove that the set of states of the world in which a player is rational is an event (a Borel set). Second, we analyze players' strategic reasoning adapting the strong rationalizability solution concept, and we give its epistemic justification in terms of players' rationality and interactive beliefs. The "forward-induction" reasoning entailed by such solution allows players to make inferences about their co-players' beliefs, private information, and future, or past and unobserved behavior based on the behavioral and emotional feedback they obtain as the game unfolds. We illustrate our framework with a signaling-like example, showing that the possibility of betraying lies, e.g., by blushing, may incentivize truth-telling.
+  </div>
+</div>
+```
+
+## Publications
+
+#### Information flows and memory in games
+
+```{=html}
+<div class="paper-meta">
+  with Pierpaolo Battigalli
+  <span class="paper-inline-links">
+    <button class="abstract-toggle" type="button">abstract</button>
+    <a href="https://doi.org/10.1016/j.geb.2024.03.018">paper</a>
+  </span>
+  <br>
+  <span class="venue"><em>Games and Economic Behavior</em> (2024)</span>
+</div>
+```
+
+```{=html}
+<div class="paper">
+  <div class="abs-body">
+    The standard extensive-form partitional representation of information in sequential games fails to distinguish the description of the rules of interaction from the description of players' personal traits. Indeed, this representation does not model how the information given to players as per the rules of the game blends with players' cognitive abilities. We propose a representation of sequential games that explicitly describes the flow of information accruing to players rather than the stock of information retained by players encoded in information partitions. Then, we add a game-independent description of players' mnemonic abilities. If players have perfect memory, our flow representation gives rise to information partitions satisfying the perfect recall property, but different combinations of information flows and players' mnemonic abilities may induce the same information partitions. We show how to use our framework to explicitly model a wide array of cognitive limitations and embed them in the representation of game situations.
+  </div>
+</div>
+```

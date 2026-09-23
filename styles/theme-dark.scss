@@ -1,0 +1,17 @@
+/*-- scss:defaults --*/
+// ═══════════════════════════════════════════════════════════════════════════
+//  COLORS — DARK MODE
+// ═══════════════════════════════════════════════════════════════════════════
+
+$body-bg:      #14181a;   // page background
+$body-color:   #e7eae4;   // main text
+$link-color:   #93bb75;   // links
+$border-color: #2b3330;   // thin lines / rules
+
+/*-- scss:rules --*/
+:root {
+  --accent:  #93bb75;
+  --muted:   #99a398;
+  --page-bg: #14181a;
+  --page-fg: #e7eae4;
+}

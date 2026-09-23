@@ -1,0 +1,135 @@
+---
+title: "Nicolò Generoso"
+page-layout: full
+---
+
+:::::: {.home}
+
+::::: {.bio}
+
+:::: {.bio-text}
+# Nicolò Generoso
+
+Hi! I am an Economics PhD student at Yale.
+
+I am interested in industrial organization and market design.
+
+I go by Nico.
+
+<!-- Copy-able email box -->
+::: {.email-line}
+You can reach me at <span class="email-copy" data-email="nicolo.generoso@yale.edu" title="Click to copy"><code class="email-copy-addr">nicolo.generoso@yale.edu</code><button type="button" class="email-copy-btn" aria-label="Copy email address"><i class="bi bi-copy"></i></button></span>
+:::
+
+::: {.linkrow}
+<!-- CV · email · GitHub · LinkedIn (dark-mode toggle appended by the script below) -->
+<!-- [CV](cv.pdf) -->
+[<i class="bi bi-envelope"></i>](mailto:nicolo.generoso@yale.edu "Email")
+[<i class="bi bi-github"></i>](https://github.com/nicologeneroso "GitHub")
+[<i class="bi bi-linkedin"></i>](https://www.linkedin.com/in/ngeneroso "LinkedIn")
+:::
+
+::::
+
+<img src="pictures/picture.jpg" class="bio-photo" alt="Nicolò Generoso">
+
+
+:::::
+
+::::: {.research-area}
+{{< include content/_research.qmd >}}
+
+{{< include content/_teaching.qmd >}}
+:::::
+
+::::::
+
+
+
+```{=html}
+<script>
+// Move dark-mode toggle next to intro links
+(function () {
+  var toggle = document.querySelector('.quarto-color-scheme-toggle');
+  var row = document.querySelector('.linkrow p') || document.querySelector('.linkrow');
+  if (toggle && row) {
+    // muted "·" separating the links from the toggle
+    var sep = document.createElement('span');
+    sep.className = 'linkrow-sep';
+    sep.textContent = '·';
+    row.appendChild(sep);
+    row.appendChild(toggle);
+  }
+})();
+</script>
+```
+
+```{=html}
+<script>
+// Toggle a paper abstract without taking the links off the coauthor row
+document.querySelectorAll('.abstract-toggle').forEach(function (button) {
+  button.addEventListener('click', function () {
+    button.classList.toggle('is-open');
+  });
+});
+</script>
+```
+
+```{=html}
+<script>
+// Make the email copy-able:
+(function () {
+  var box = document.querySelector('.email-copy');
+  if (!box) return;
+  var icon = box.querySelector('.email-copy-btn i');
+  var addr = box.querySelector('.email-copy-addr');
+  var timer;
+
+  // Fall back to the old select+execCommand 
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      ok ? resolve() : reject();
+    });
+  }
+
+  // Swap the copy icon for another one for a moment, then revert it
+  function flash(iconClass, tip, ms) {
+    icon.className = iconClass;
+    box.title = tip;
+    box.classList.add('is-copied');
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      icon.className = 'bi bi-copy';
+      box.title = 'Click to copy';
+      box.classList.remove('is-copied');
+    }, ms);
+  }
+
+  box.addEventListener('click', function () {
+    copyText(box.dataset.email).then(function () {
+      flash('bi bi-check2', 'Copied!', 1800);
+    }).catch(function () {
+      var range = document.createRange();
+      range.selectNodeContents(addr);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      flash('bi bi-exclamation-circle', 'Press Ctrl+C to copy', 2600);
+    });
+  });
+})();
+</script>
+```
