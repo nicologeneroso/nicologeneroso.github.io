@@ -344,12 +344,23 @@ p code.email-copy-addr {
 }
 
 // Drop photodrops below the intro instead of squeezing beside it
-@media (max-width: 360px) {
-  .bio { display: block; }
+@media (max-width: 600px) {
+  main.content {
+    width: calc(100% - 2rem);
+  }
+
+  .home {
+    padding-top: 1.5rem;
+  }
+
+  .bio {
+    display: block;
+  }
+
   .bio-photo {
     display: block;
-    width: min(140px, 40vw);
+    width: 140px;
     height: auto;
-    margin: 1.1rem 0 0;
+    margin: 1.25rem 0 0;
   }
 }
