@@ -99,7 +99,7 @@ h1 { font-size: clamp(1.5rem, 3.5vw, 1.7rem); margin-bottom: 0.3rem; }
 // line-height matches .paper-meta/.paper-links below so every row's leading
 // is identical — otherwise headings' 1.2 vs paragraphs' 1.5 line-height makes
 // equal margins look like unequal gaps.
-h4 { font-size: 1em; font-weight: 400; line-height: 1.5; margin: 0 0 0.15rem; }
+h4 { font-size: 1em; font-weight: 400; line-height: 1.5; margin: 0 0 0.15rem; max-width: 680px; }
 h4 strong { font-weight: inherit; }
 
 // Section headers
@@ -298,9 +298,11 @@ p code.email-copy-addr {
   padding-left: 0.9rem;
   border-left: 2px solid var(--bs-border-color);
   color: var(--muted);
-  max-width: 680px;
-  font-size: 0.88em;
-  line-height: 1.55;
+  max-width: 720px;
+  font-size: 0.78em;
+  line-height: 1.45;
+  text-align: justify;
+  hyphens: auto;
 }
 .paper-meta:has(.abstract-toggle.is-open) + .paper .abs-body { display: block; }
 

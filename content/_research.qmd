@@ -1,6 +1,6 @@
 ## Working papers
 
-#### Universal healthcare with market options
+#### Universal healthcare with a private option: Targeting, congestion, and capacity in diagnostic imaging
 
 ```{=html}
 <div class="paper-meta">
@@ -15,12 +15,16 @@
 ```{=html}
 <div class="paper">
   <div class="abs-body">
-    Coming soon.
+    We study patient welfare, capacity investment, and wait times in a universal healthcare system with a private-pay market. Patients can either wait for publicly funded care or pay out of pocket for faster private treatment. The availability of private-pay care can stimulate investment in capacity and relieve public queues, but market power can distort prices and the allocation of treatment between publicly funded and paying patients. We build a model of patient choice, wait times, pricing, and capacity investment in diagnostic imaging. Estimation combines administrative data on publicly funded care from a northern Italian region and scraped private prices and appointment availability. Our estimates reveal that patient preferences are heterogeneous, with younger and richer individuals more willing to pay for faster care, and that providers' pricing and capacity choices significantly affect the equilibrium wait times for congested publicly funded care.
+    Profit-maximizing providers do not internalize the resulting congestion externality, and the socially efficient allocation would lower private prices and would expand treatment capacity compared to the status quo. 
+    Removing private-pay access would reduce patient welfare through the loss of sorting on willingness to pay for timeliness, the additional congestion imposed on public queues, and reduced incentives for investment in capacity.
+    Attaining the same welfare under public-only provision would require a 40%-higher public budget to fund additional capacity.
+    Private-pay care benefits patients in nearly all urgency, age, and income groups, including those unlikely to use it themselves, who gain from reduced congestion in public queues.
   </div>
 </div>
 ```
 
-#### Who gains from thickness? Access and market power in agricultural markets
+#### Who gains from thicker markets? Access and market power in agricultural trade
 
 ```{=html}
 <div class="paper-meta">
@@ -35,7 +39,7 @@
 ```{=html}
 <div class="paper">
   <div class="abs-body">
-    Coming soon.
+    We study how the organization of trade affects efficiency and division of surplus in South Korea's agricultural wholesale markets, where auction houses compete for buyers and sellers. Integrating fragmented trading pools can improve match quality and limit market power on both sides. However, it can also discourage participation and strengthen auction houses' fee-setting power. Consolidating trade in fewer locations can also raise transportation costs. We develop a model of farmer sorting, bidder participation, spot-market trade, downstream sales, and auction house fee setting. We use detailed fresh-produce auction records from 2016-2023 for estimation. On the seller side, we construct a panel of farmers' shipment choices under varying competitive environments shaped by exogenous harvest patterns, which identifies their sensitivity to distance and price. On the buyer side, optimal participation conditions identify bidder markdowns. We combine these markdowns with auction prices to identify match values created from trade as a flexible function of supply and bidder counts. Estimates show that match quality increases substantially with the number of participating bidders, especially for crops with more within-crop varieties. Yet neither side of the market fully internalizes these gains because of bidder market power and matching benefits that accrue to other participants; counterfactuals show that removing these distortions, as well as auction house market power, would raise total surplus by 5%. Nevertheless, we find that even with such distortions, integrating co-located auction houses---under the existing cap on auction house fees---would have a similar welfare effect, with farmers capturing roughly 60% of the increase. Finally, we demonstrate that consolidating niche market locations to regional hubs can raise total surplus despite the increase in transport costs.
   </div>
 </div>
 ```
@@ -55,7 +59,7 @@
 ```{=html}
 <div class="paper">
   <div class="abs-body">
-    Coming soon.
+    Allocation of differentiated goods to buyers with heterogeneous tastes introduces a trade-off between efficient product-buyer matching and competition between buyers. Design choices such as disclosing finer information or segmenting supply allow bidders to sort into the auctions of their preferred items, improving match quality while thinning each auction. Treating differentiated objects as identical instead increases competition at the expense of poorer matches. We quantify this trade-off in wholesale peach auctions in South Korea, where hundreds of lots of different varieties are auctioned in sequence each day. We document bidder-variety sorting in auction participation and estimate a model of sequential auctions with multi-unit bidder demand, heterogeneous latent tastes for varieties, and selective entry. The estimates reveal heterogeneity both in bidders' relative valuations across varieties and in their willingness to bid on those varieties. Revenue-maximizing schemes pool varieties that attract different bidders while preserving the horizontal differentiation most valuable for matching. These schemes would raise revenue by 4.8-7.5%, with effects on efficiency ranging from a 2.2% loss to a 0.5% gain. Separate sales would typically be dominated by pooling schemes that improve both revenue and match value. Supply composition changes the balance between potential participation gains and horizontal matching losses, and an index of these forces closely predicts the resulting revenue ranking of pooling schemes.
   </div>
 </div>
 ```
