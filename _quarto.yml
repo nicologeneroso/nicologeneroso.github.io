@@ -43,3 +43,8 @@ format:
 
     # Disable Quarto's hover chain-link icon on headings 
     anchor-sections: false
+
+resources:
+  - google1fd5aa348bb4c26d.html
+  - Generoso_Nicolo_CV.pdf
+  - papers/**
