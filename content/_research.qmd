@@ -4,7 +4,7 @@
 
 ```{=html}
 <div class="paper-meta">
-  with Miho Hong
+  with <a href="https://sites.google.com/view/mihohong">Miho Hong</a>
   <span class="paper-inline-links">
     <button class="abstract-toggle" type="button">abstract</button>
     <!-- <a href="#">paper</a> -->
@@ -15,11 +15,7 @@
 ```{=html}
 <div class="paper">
   <div class="abs-body">
-    We study patient welfare, capacity investment, and wait times in a universal healthcare system with a private-pay market. Patients can either wait for publicly funded care or pay out of pocket for faster private treatment. The availability of private-pay care can stimulate investment in capacity and relieve public queues, but market power can distort prices and the allocation of treatment between publicly funded and paying patients. We build a model of patient choice, wait times, pricing, and capacity investment in diagnostic imaging. Estimation combines administrative data on publicly funded care from a northern Italian region and scraped private prices and appointment availability. Our estimates reveal that patient preferences are heterogeneous, with younger and richer individuals more willing to pay for faster care, and that providers' pricing and capacity choices significantly affect the equilibrium wait times for congested publicly funded care.
-    Profit-maximizing providers do not internalize the resulting congestion externality, and the socially efficient allocation would lower private prices and would expand treatment capacity compared to the status quo. 
-    Removing private-pay access would reduce patient welfare through the loss of sorting on willingness to pay for timeliness, the additional congestion imposed on public queues, and reduced incentives for investment in capacity.
-    Attaining the same welfare under public-only provision would require a 40%-higher public budget to fund additional capacity.
-    Private-pay care benefits patients in nearly all urgency, age, and income groups, including those unlikely to use it themselves, who gain from reduced congestion in public queues.
+    We study patient welfare, capacity investment, and wait times in a universal healthcare system where patients can either wait for publicly funded care or pay for faster private treatment. Allowing private-pay care can stimulate capacity investment and relieve public queues, but market power can distort prices and the allocation of treatment. We build a model of patient choice, wait times, pricing, and capacity investment. Estimation combines administrative data on publicly funded care and scraped private prices and appointment availability. Providers' pricing and capacity choices affect equilibrium wait times, but profit-maximizing providers do not internalize the resulting congestion externality. The socially efficient allocation would lower private prices and expand capacity. Disallowing private-pay care would reduce patient welfare through the loss of sorting on willingness to pay for timeliness, increased congestion in public queues, and reduced capacity investment. Attaining the status quo welfare under public-only provision would require a 40%-higher public budget to fund additional publicly provided capacity. Private-pay care benefits patients in nearly all urgency, age, and income groups, including those unlikely to use it themselves, who gain from reduced congestion in public queues.
   </div>
 </div>
 ```
@@ -28,7 +24,7 @@
 
 ```{=html}
 <div class="paper-meta">
-  with Miho Hong
+  with <a href="https://sites.google.com/view/mihohong">Miho Hong</a>
   <span class="paper-inline-links">
     <button class="abstract-toggle" type="button">abstract</button>
     <!-- <a href="#">paper</a> -->
@@ -48,7 +44,7 @@
 
 ```{=html}
 <div class="paper-meta">
-  with Miho Hong
+  with <a href="https://sites.google.com/view/mihohong">Miho Hong</a>
   <span class="paper-inline-links">
     <button class="abstract-toggle" type="button">abstract</button>
     <!-- <a href="#">paper</a> -->
@@ -59,7 +55,7 @@
 ```{=html}
 <div class="paper">
   <div class="abs-body">
-    Allocation of differentiated goods to buyers with heterogeneous tastes introduces a trade-off between efficient product-buyer matching and competition between buyers. Design choices such as disclosing finer information or segmenting supply allow bidders to sort into the auctions of their preferred items, improving match quality while thinning each auction. Treating differentiated objects as identical instead increases competition at the expense of poorer matches. We quantify this trade-off in wholesale peach auctions in South Korea, where hundreds of lots of different varieties are auctioned in sequence each day. We document bidder-variety sorting in auction participation and estimate a model of sequential auctions with multi-unit bidder demand, heterogeneous latent tastes for varieties, and selective entry. The estimates reveal heterogeneity both in bidders' relative valuations across varieties and in their willingness to bid on those varieties. Revenue-maximizing schemes pool varieties that attract different bidders while preserving the horizontal differentiation most valuable for matching. These schemes would raise revenue by 4.8-7.5%, with effects on efficiency ranging from a 2.2% loss to a 0.5% gain. Separate sales would typically be dominated by pooling schemes that improve both revenue and match value. Supply composition changes the balance between potential participation gains and horizontal matching losses, and an index of these forces closely predicts the resulting revenue ranking of pooling schemes.
+    Allocation of differentiated goods to buyers with heterogeneous tastes introduces a tradeoff between efficient product-buyer matching and competition between buyers. Separate auctions improve matching by letting buyers target preferred items but thin competition, while pooling differentiated objects increases competition at the expense of match quality. We quantify this tradeoff in wholesale peach auctions in South Korea, where hundreds of lots are auctioned sequentially each day. We document bidder-variety sorting in auction participation and estimate a model of sequential auctions with multi-unit bidder demand, heterogeneous latent tastes for varieties, and selective entry. The estimates reveal heterogeneity in both relative valuations and willingness to bid across varieties. Revenue-maximizing schemes pool varieties that attract different bidders while preserving the horizontal differentiation most valuable for matching. These schemes would raise revenue by 4.8-7.5%, with effects on efficiency ranging from a 2.2% loss to a 0.5% gain. The status quo is typically dominated by pooling schemes that would improve both revenue and match value. Supply composition changes the balance between participation gains and matching losses, and an index of these forces closely predicts the resulting revenue ranking of pooling schemes.
   </div>
 </div>
 ```
@@ -68,7 +64,7 @@
 
 ```{=html}
 <div class="paper-meta">
-  with Pierpaolo Battigalli
+  with <a href="https://www.unibocconi.it/en/faculty/pierpaolo-battigalli">Pierpaolo Battigalli</a>
   <span class="paper-inline-links">
     <button class="abstract-toggle" type="button">abstract</button>
     <a href="https://igier.unibocconi.eu/sites/default/files/media/publication/719_1.pdf?_gl=1*1jtf5vg*_up*MQ..*_ga*NTMwMTM5NjE3LjE3OTAwMjg2MzU.*_ga_BV13NTT085*czE3OTAwMjg2MzQkbzEkZzEkdDE3OTAwMjg2NTMkajQxJGwwJGgw">paper</a>
@@ -92,7 +88,7 @@
 
 ```{=html}
 <div class="paper-meta">
-  with Pierpaolo Battigalli
+  with <a href="https://www.unibocconi.it/en/faculty/pierpaolo-battigalli">Pierpaolo Battigalli</a>
   <span class="paper-inline-links">
     <button class="abstract-toggle" type="button">abstract</button>
     <a href="https://doi.org/10.1016/j.geb.2024.03.018">paper</a>

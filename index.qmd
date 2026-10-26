@@ -23,7 +23,7 @@ You can reach me at <span class="email-copy" data-email="nicolo.generoso@yale.ed
 
 ::: {.linkrow}
 <!-- CV · email · GitHub · LinkedIn (dark-mode toggle appended by the script below) -->
-<!-- [CV](cv.pdf) -->
+[CV](https://nicologeneroso.github.io/Generoso_Nicolo_CV.pdf)
 [<i class="bi bi-envelope"></i>](mailto:nicolo.generoso@yale.edu "Email")
 [<i class="bi bi-github"></i>](https://github.com/nicologeneroso "GitHub")
 [<i class="bi bi-linkedin"></i>](https://www.linkedin.com/in/ngeneroso "LinkedIn")

@@ -38,11 +38,15 @@ h1 { font-size: clamp(1.5rem, 3.5vw, 1.7rem); margin-bottom: 0.3rem; }
 // Name/intro/links from .bio (index.qmd); hide Quarto's title block
 #title-block-header { display: none; }
 
-.home { padding-top: 2.5rem; }
+// One centered column; its right edge is the photo's right edge, and the
+// section bars and paper text all fill it.
+.home { padding-top: 2.5rem; max-width: 760px; margin-left: auto; margin-right: auto; }
+.research-area { width: 100%; }
+.research-area :is(h2, h3, hr, .paper, .paper-meta, .teaching-list) { max-width: none; width: 100%; }
 
 // Portrait: intro text left, photo right, vertically centered
 .bio {
-  max-width: 760px;
+  width: 100%;
   margin-bottom: 1.3rem;
   display: flex;
   gap: 1.5rem;
@@ -99,7 +103,7 @@ h1 { font-size: clamp(1.5rem, 3.5vw, 1.7rem); margin-bottom: 0.3rem; }
 // line-height matches .paper-meta/.paper-links below so every row's leading
 // is identical — otherwise headings' 1.2 vs paragraphs' 1.5 line-height makes
 // equal margins look like unequal gaps.
-h4 { font-size: 1em; font-weight: 400; line-height: 1.5; margin: 0 0 0.15rem; max-width: 680px; }
+h4 { font-size: 1em; font-weight: 400; line-height: 1.5; margin: 0 0 0.15rem; }
 h4 strong { font-weight: inherit; }
 
 // Section headers
@@ -167,7 +171,10 @@ body.quarto-dark .quarto-color-scheme-toggle::before { content: "☀"; }
 //  RESEARCH ROWS  
 //  Paper text/links live in content/_research.qmd
 // ═══════════════════════════════════════════════════════════════════════════
-.paper { margin: 0 0 1.3rem; }
+.paper { margin: 0 0 1.9rem; }
+
+// A bit more air above each section header, and between its bar and the first item
+.research-area h2 { margin-top: 2.2rem; margin-bottom: 1.2rem; padding-bottom: 0.4rem; }
 p:has(+ .paper) { margin-bottom: 0.3rem; }
 
 // Coauthor / publication lines under a title
@@ -176,6 +183,7 @@ p:has(+ .paper) { margin-bottom: 0.3rem; }
 // and line-height as the title and links row.
 .paper-meta {
   color: var(--muted);
+  font-size: 0.92em;
   margin: 0;
 }
 .paper-meta p { margin: 0 0 0.15rem; line-height: 1.5; }
@@ -298,7 +306,6 @@ p code.email-copy-addr {
   padding-left: 0.9rem;
   border-left: 2px solid var(--bs-border-color);
   color: var(--muted);
-  max-width: 720px;
   font-size: 0.78em;
   line-height: 1.45;
   text-align: justify;
@@ -365,4 +372,17 @@ p code.email-copy-addr {
     height: auto;
     margin: 1.25rem 0 0;
   }
+}
+// One-sentence "question" line between a paper's title and its coauthor line
+// Currently unused: add <div class="paper-question">…</div> at the top of a
+// paper's .paper-meta block in content/_research.qmd to show it.
+.paper-question {
+  color: color-mix(in srgb, var(--muted) 80%, var(--page-bg));
+  font-size: 0.92em;
+  line-height: 1.5;
+  margin: 0.2rem 0 0.45rem;
+  padding: 0.3rem 0.7rem;
+  border-left: 3px solid var(--bs-border-color);
+  background: color-mix(in srgb, var(--muted) 7%, transparent);
+  border-radius: 0 6px 6px 0;
 }
