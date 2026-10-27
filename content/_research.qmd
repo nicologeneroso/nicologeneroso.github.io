@@ -1,6 +1,6 @@
 ## Working papers
 
-#### Universal healthcare with a private option: Targeting, congestion, and capacity in diagnostic imaging
+#### Universal healthcare with a private option: Investment and congestion in diagnostic imaging
 
 ```{=html}
 <div class="paper-meta">
