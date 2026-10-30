@@ -49,18 +49,29 @@ You can reach me at <span class="email-copy" data-email="nicolo.generoso@yale.ed
 ```{=html}
 <script>
 // Move dark-mode toggle next to intro links
-(function () {
-  var toggle = document.querySelector('.quarto-color-scheme-toggle');
+// Without a navbar Quarto only creates the toggle on DOMContentLoaded, so
+// build it here (Quarto skips its floating one if a toggle already exists).
+document.addEventListener('DOMContentLoaded', function () {
   var row = document.querySelector('.linkrow p') || document.querySelector('.linkrow');
-  if (toggle && row) {
-    // muted "·" separating the links from the toggle
-    var sep = document.createElement('span');
-    sep.className = 'linkrow-sep';
-    sep.textContent = '·';
-    row.appendChild(sep);
-    row.appendChild(toggle);
+  if (!row) return;
+  var toggle = document.querySelector('.quarto-color-scheme-toggle');
+  if (!toggle) {
+    toggle = document.createElement('a');
+    toggle.className = 'quarto-color-scheme-toggle';
+    toggle.href = '';
+    toggle.title = 'Toggle dark mode';
+    toggle.onclick = function () { try { window.quartoToggleColorScheme(); } catch (e) {} return false; };
+    var i = document.createElement('i');
+    i.className = 'bi';
+    toggle.appendChild(i);
   }
-})();
+  // muted "·" separating the links from the toggle
+  var sep = document.createElement('span');
+  sep.className = 'linkrow-sep';
+  sep.textContent = '·';
+  row.appendChild(sep);
+  row.appendChild(toggle);
+});
 </script>
 ```
 
