@@ -42,9 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9e04a324a9d49f73a71bff9b7ed601f4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1b36426bbf2326a2b8d1af552c16515b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-9e04a324a9d49f73a71bff9b7ed601f4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8b2bb18c68a12e7693b8f26e3d35b77c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-426832bf4f79cb57417e9bc0057ab14d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-8b2bb18c68a12e7693b8f26e3d35b77c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -274,8 +274,8 @@ ul.task-list li input[type="checkbox"] {
 <p>You can reach me at <span class="email-copy" data-email="nicolo.generoso@yale.edu" title="Click to copy"><code class="email-copy-addr">nicolo.generoso@yale.edu</code><button type="button" class="email-copy-btn" aria-label="Copy email address"><i class="bi bi-copy"></i></button></span></p>
 </div>
 <div class="linkrow">
-<!-- CV · email · GitHub · LinkedIn (dark-mode toggle appended by the script below) -->
-<p><a href="https://nicologeneroso.github.io/Generoso_Nicolo_CV.pdf">CV</a> <a href="mailto:nicolo.generoso@yale.edu"><i class="bi bi-envelope"></i></a> <a href="https://github.com/nicologeneroso" title="GitHub"><i class="bi bi-github"></i></a> <a href="https://www.linkedin.com/in/ngeneroso" title="LinkedIn"><i class="bi bi-linkedin"></i></a></p>
+<!-- CV · email · GitHub · LinkedIn -->
+<p><a href="./Generoso_Nicolo_CV.pdf" data-umami-event="cv-click">CV</a> <a href="mailto:nicolo.generoso@yale.edu"><i class="bi bi-envelope"></i></a> <a href="https://github.com/nicologeneroso" title="GitHub"><i class="bi bi-github"></i></a> <a href="https://www.linkedin.com/in/ngeneroso" title="LinkedIn"><i class="bi bi-linkedin"></i></a></p>
 </div>
 </section>
 <p><img src="pictures/picture.jpg" class="bio-photo" alt="Nicolò Generoso"></p>
@@ -288,8 +288,15 @@ ul.task-list li input[type="checkbox"] {
 <div class="paper-meta">
   with <a href="https://sites.google.com/view/mihohong">Miho Hong</a>
   <span class="paper-inline-links">
-    <button class="abstract-toggle" type="button">abstract</button>
-    <!-- <a href="#">paper</a> -->
+    <button class="abstract-toggle" type="button">
+      abstract
+    </button>
+    <!-- <a 
+     href="/papers/Generoso_JMP.pdf"
+     data-umami-event="paper-click"
+     data-umami-event-paper="hosp">
+     paper
+    </a> -->
   </span>
 </div>
 <div class="paper">
@@ -303,13 +310,20 @@ ul.task-list li input[type="checkbox"] {
 <div class="paper-meta">
   with <a href="https://sites.google.com/view/mihohong">Miho Hong</a>
   <span class="paper-inline-links">
-    <button class="abstract-toggle" type="button">abstract</button>
-    <!-- <a href="#">paper</a> -->
+    <button class="abstract-toggle" type="button">
+      abstract
+    </button>
+    <!-- <a 
+     href="https://yaleedu-my.sharepoint.com/:b:/g/personal/miho_hong_yale_edu/IQB1rAJgQHHjTIN65BzzCVspAVWG55E32OWhJNqFFbaRzR0"
+     data-umami-event="paper-click"
+     data-umami-event-paper="thickenss">
+     paper
+    </a> -->
   </span>
 </div>
 <div class="paper">
   <div class="abs-body">
-    We study how the organization of trade affects efficiency and division of surplus in South Korea's agricultural wholesale markets, where auction houses compete for buyers and sellers. Integrating fragmented trading pools can improve match quality and limit market power on both sides. However, it can also discourage participation and strengthen auction houses' fee-setting power. Consolidating trade in fewer locations can also raise transportation costs. We develop a model of farmer sorting, bidder participation, spot-market trade, downstream sales, and auction house fee setting. We use detailed fresh-produce auction records from 2016-2023 for estimation. On the seller side, we construct a panel of farmers' shipment choices under varying competitive environments shaped by exogenous harvest patterns, which identifies their sensitivity to distance and price. On the buyer side, optimal participation conditions identify bidder markdowns. We combine these markdowns with auction prices to identify match values created from trade as a flexible function of supply and bidder counts. Estimates show that match quality increases substantially with the number of participating bidders, especially for crops with more within-crop varieties. Yet neither side of the market fully internalizes these gains because of bidder market power and matching benefits that accrue to other participants; counterfactuals show that removing these distortions, as well as auction house market power, would raise total surplus by 5%. Nevertheless, we find that even with such distortions, integrating co-located auction houses---under the existing cap on auction house fees---would have a similar welfare effect, with farmers capturing roughly 60% of the increase. Finally, we demonstrate that consolidating niche market locations to regional hubs can raise total surplus despite the increase in transport costs.
+    We study how the organization of trade affects efficiency and surplus division in South Korea's agricultural wholesale markets, where farmers transport and sell produce through auction houses to buyers. Integrating fragmented trading pools can improve match quality and limit market power on both sides. However, it can also discourage participation and strengthen auction houses' fee-setting power. Consolidating trade in fewer locations can also raise transportation costs. We develop a model of farmer sorting, bidder participation, spot-market trade, downstream sales, and auction house fee setting. We use detailed fresh-produce auction records from 2016-2023 to estimate the model. On the seller side, we construct a panel of farmers' shipment choices under varying competitive environments shaped by exogenous harvest patterns, which identifies their sensitivity to distance and price. On the buyer side, optimal participation conditions identify bidder markdowns. We combine these markdowns with auction prices to identify match values created from trade as a flexible function of supply and bidder counts. Estimates show that match quality increases substantially with the number of participating bidders, especially for crops with more within-crop varieties. Yet neither side of the market fully internalizes these gains because of bidder market power and matching benefits that accrue to other participants; counterfactuals show that removing these distortions, as well as auction house market power, would raise total surplus by 27%. Nevertheless, we find that even with such distortions, integrating co-located auction houses---under the existing cap on auction house fees---would have a larger welfare effect (+40%), with farmers capturing roughly 41% of the increase. Finally, we show that consolidating niche market locations into regional hubs can raise total surplus despite higher transport costs.
   </div>
 </div>
 </section>
@@ -318,8 +332,14 @@ ul.task-list li input[type="checkbox"] {
 <div class="paper-meta">
   with <a href="https://sites.google.com/view/mihohong">Miho Hong</a>
   <span class="paper-inline-links">
-    <button class="abstract-toggle" type="button">abstract</button>
-    <!-- <a href="#">paper</a> -->
+    <button class="abstract-toggle" type="button">abstract
+    </button>
+    <!-- <a 
+     href="/papers/Generoso_Hong_peaches.pdf"
+     data-umami-event="paper-click"
+     data-umami-event-paper="peaches">
+     paper
+    </a> -->
   </span>
 </div>
 <div class="paper">
@@ -378,9 +398,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <script>
-// Move dark-mode toggle next to intro links
-// Without a navbar Quarto only creates the toggle on DOMContentLoaded, so
-// build it here (Quarto skips its floating one if a toggle already exists).
 document.addEventListener('DOMContentLoaded', function () {
   var row = document.querySelector('.linkrow p') || document.querySelector('.linkrow');
   if (!row) return;
@@ -404,7 +421,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <script>
-// Toggle a paper abstract without taking the links off the coauthor row
 document.querySelectorAll('.abstract-toggle').forEach(function (button) {
   button.addEventListener('click', function () {
     button.classList.toggle('is-open');
