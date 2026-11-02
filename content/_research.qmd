@@ -6,8 +6,17 @@
 <div class="paper-meta">
   with <a href="https://sites.google.com/view/mihohong">Miho Hong</a>
   <span class="paper-inline-links">
-    <button class="abstract-toggle" type="button">abstract</button>
-    <!-- <a href="#">paper</a> -->
+    <button 
+      class="abstract-toggle" 
+      type="button">
+      abstract
+    </button>
+    <!-- <a 
+     href="/papers/Generoso_JMP.pdf"
+     data-umami-event="paper-click"
+     data-umami-event-paper="hosp">
+     paper
+    </a> -->
   </span>
 </div>
 ```
@@ -26,8 +35,17 @@
 <div class="paper-meta">
   with <a href="https://sites.google.com/view/mihohong">Miho Hong</a>
   <span class="paper-inline-links">
-    <button class="abstract-toggle" type="button">abstract</button>
-    <!-- <a href="#">paper</a> -->
+    <button 
+      class="abstract-toggle" 
+      type="button">
+      abstract
+    </button>
+    <!-- <a 
+     href="https://yaleedu-my.sharepoint.com/:b:/g/personal/miho_hong_yale_edu/IQB1rAJgQHHjTIN65BzzCVspAVWG55E32OWhJNqFFbaRzR0"
+     data-umami-event="paper-click"
+     data-umami-event-paper="thickenss">
+     paper
+    </a> -->
   </span>
 </div>
 ```
@@ -35,7 +53,7 @@
 ```{=html}
 <div class="paper">
   <div class="abs-body">
-    We study how the organization of trade affects efficiency and division of surplus in South Korea's agricultural wholesale markets, where auction houses compete for buyers and sellers. Integrating fragmented trading pools can improve match quality and limit market power on both sides. However, it can also discourage participation and strengthen auction houses' fee-setting power. Consolidating trade in fewer locations can also raise transportation costs. We develop a model of farmer sorting, bidder participation, spot-market trade, downstream sales, and auction house fee setting. We use detailed fresh-produce auction records from 2016-2023 for estimation. On the seller side, we construct a panel of farmers' shipment choices under varying competitive environments shaped by exogenous harvest patterns, which identifies their sensitivity to distance and price. On the buyer side, optimal participation conditions identify bidder markdowns. We combine these markdowns with auction prices to identify match values created from trade as a flexible function of supply and bidder counts. Estimates show that match quality increases substantially with the number of participating bidders, especially for crops with more within-crop varieties. Yet neither side of the market fully internalizes these gains because of bidder market power and matching benefits that accrue to other participants; counterfactuals show that removing these distortions, as well as auction house market power, would raise total surplus by 5%. Nevertheless, we find that even with such distortions, integrating co-located auction houses---under the existing cap on auction house fees---would have a similar welfare effect, with farmers capturing roughly 60% of the increase. Finally, we demonstrate that consolidating niche market locations to regional hubs can raise total surplus despite the increase in transport costs.
+    We study how the organization of trade affects efficiency and surplus division in South Korea's agricultural wholesale markets, where farmers transport and sell produce through auction houses to buyers. Integrating fragmented trading pools can improve match quality and limit market power on both sides. However, it can also discourage participation and strengthen auction houses' fee-setting power. Consolidating trade in fewer locations can also raise transportation costs. We develop a model of farmer sorting, bidder participation, spot-market trade, downstream sales, and auction house fee setting. We use detailed fresh-produce auction records from 2016-2023 to estimate the model. On the seller side, we construct a panel of farmers' shipment choices under varying competitive environments shaped by exogenous harvest patterns, which identifies their sensitivity to distance and price. On the buyer side, optimal participation conditions identify bidder markdowns. We combine these markdowns with auction prices to identify match values created from trade as a flexible function of supply and bidder counts. Estimates show that match quality increases substantially with the number of participating bidders, especially for crops with more within-crop varieties. Yet neither side of the market fully internalizes these gains because of bidder market power and matching benefits that accrue to other participants; counterfactuals show that removing these distortions, as well as auction house market power, would raise total surplus by 27%. Nevertheless, we find that even with such distortions, integrating co-located auction houses---under the existing cap on auction house fees---would have a larger welfare effect (+40%), with farmers capturing roughly 41% of the increase. Finally, we show that consolidating niche market locations into regional hubs can raise total surplus despite higher transport costs.
   </div>
 </div>
 ```
@@ -46,8 +64,17 @@
 <div class="paper-meta">
   with <a href="https://sites.google.com/view/mihohong">Miho Hong</a>
   <span class="paper-inline-links">
-    <button class="abstract-toggle" type="button">abstract</button>
-    <!-- <a href="#">paper</a> -->
+    <button 
+      class="abstract-toggle" 
+      type="button"
+      >abstract
+    </button>
+    <!-- <a 
+     href="/papers/Generoso_Hong_peaches.pdf"
+     data-umami-event="paper-click"
+     data-umami-event-paper="peaches">
+     paper
+    </a> -->
   </span>
 </div>
 ```

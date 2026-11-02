@@ -22,8 +22,8 @@ You can reach me at <span class="email-copy" data-email="nicolo.generoso@yale.ed
 :::
 
 ::: {.linkrow}
-<!-- CV · email · GitHub · LinkedIn (dark-mode toggle appended by the script below) -->
-[CV](https://nicologeneroso.github.io/Generoso_Nicolo_CV.pdf)
+<!-- CV · email · GitHub · LinkedIn -->
+[CV](/Generoso_Nicolo_CV.pdf){data-umami-event="cv-click"}
 [<i class="bi bi-envelope"></i>](mailto:nicolo.generoso@yale.edu "Email")
 [<i class="bi bi-github"></i>](https://github.com/nicologeneroso "GitHub")
 [<i class="bi bi-linkedin"></i>](https://www.linkedin.com/in/ngeneroso "LinkedIn")
@@ -48,9 +48,6 @@ You can reach me at <span class="email-copy" data-email="nicolo.generoso@yale.ed
 
 ```{=html}
 <script>
-// Move dark-mode toggle next to intro links
-// Without a navbar Quarto only creates the toggle on DOMContentLoaded, so
-// build it here (Quarto skips its floating one if a toggle already exists).
 document.addEventListener('DOMContentLoaded', function () {
   var row = document.querySelector('.linkrow p') || document.querySelector('.linkrow');
   if (!row) return;
@@ -77,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 ```{=html}
 <script>
-// Toggle a paper abstract without taking the links off the coauthor row
 document.querySelectorAll('.abstract-toggle').forEach(function (button) {
   button.addEventListener('click', function () {
     button.classList.toggle('is-open');
