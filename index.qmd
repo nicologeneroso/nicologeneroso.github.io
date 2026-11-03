@@ -10,9 +10,9 @@ page-layout: full
 :::: {.bio-text}
 # Nicolò Generoso
 
-Hi! I am an Economics PhD student at Yale.
+Hi! I am an Economics PhD student at Yale. 
 
-I am interested in industrial organization and market design.
+I am interested in industrial organization and market design. I am on the 2026/27 job market.
 
 I go by Nico.
 

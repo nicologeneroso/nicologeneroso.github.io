@@ -106,6 +106,23 @@ h1 { font-size: clamp(1.5rem, 3.5vw, 1.7rem); margin-bottom: 0.3rem; }
 h4 { font-size: 1em; font-weight: 400; line-height: 1.5; margin: 0 0 0.15rem; }
 h4 strong { font-weight: inherit; }
 
+// pill 
+.tag {
+  display: inline-block;
+  margin-left: 0.5em;
+  padding: 0.05em 0.6em;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  font-size: 0.65em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: 0.12em;
+  white-space: nowrap;
+}
+
 // Section headers
 h2 { font-size: 1.3rem; font-weight: 600; }
 
@@ -372,17 +389,4 @@ p code.email-copy-addr {
     height: auto;
     margin: 1.25rem 0 0;
   }
-}
-// One-sentence "question" line between a paper's title and its coauthor line
-// Currently unused: add <div class="paper-question">…</div> at the top of a
-// paper's .paper-meta block in content/_research.qmd to show it.
-.paper-question {
-  color: color-mix(in srgb, var(--muted) 80%, var(--page-bg));
-  font-size: 0.92em;
-  line-height: 1.5;
-  margin: 0.2rem 0 0.45rem;
-  padding: 0.3rem 0.7rem;
-  border-left: 3px solid var(--bs-border-color);
-  background: color-mix(in srgb, var(--muted) 7%, transparent);
-  border-radius: 0 6px 6px 0;
 }

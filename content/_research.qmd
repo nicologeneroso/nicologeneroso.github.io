@@ -1,6 +1,6 @@
 ## Working papers
 
-#### Universal healthcare with a private option: Investment and congestion in diagnostic imaging
+#### Universal healthcare with a private option: Investment and congestion in diagnostic imaging [Job Market Paper]{.tag}
 
 ```{=html}
 <div class="paper-meta">
@@ -11,12 +11,14 @@
       type="button">
       abstract
     </button>
-    <!-- <a 
+    <a 
      href="/papers/Generoso_JMP.pdf"
+     target="_blank"
+     rel="noopener"
      data-umami-event="paper-click"
      data-umami-event-paper="hosp">
      paper
-    </a> -->
+    </a>
   </span>
 </div>
 ```
@@ -40,12 +42,12 @@
       type="button">
       abstract
     </button>
-    <!-- <a 
+    <a 
      href="https://yaleedu-my.sharepoint.com/:b:/g/personal/miho_hong_yale_edu/IQB1rAJgQHHjTIN65BzzCVspAVWG55E32OWhJNqFFbaRzR0"
      data-umami-event="paper-click"
      data-umami-event-paper="thickenss">
      paper
-    </a> -->
+    </a>
   </span>
 </div>
 ```
@@ -69,12 +71,14 @@
       type="button"
       >abstract
     </button>
-    <!-- <a 
+    <a 
      href="/papers/Generoso_Hong_peaches.pdf"
+     target="_blank"
+     rel="noopener"
      data-umami-event="paper-click"
      data-umami-event-paper="peaches">
      paper
-    </a> -->
+    </a>
   </span>
 </div>
 ```
